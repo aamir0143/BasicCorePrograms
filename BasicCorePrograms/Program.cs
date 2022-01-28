@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using BasicCorePrograms.EvenOrOdd;
 using BasicCorePrograms.FlipCoin;
 using BasicCorePrograms.HarmonicNumber;
 using BasicCorePrograms.LeapYear;
@@ -28,7 +29,8 @@ namespace BasicCoreProblems
                     Console.WriteLine("\t5. Factors");
                     Console.WriteLine("\t6. QuotientAndRemainder");
                     Console.WriteLine("\t7. Swap Two Numbers");
-                    Console.WriteLine("\t8. Exit");
+                    Console.WriteLine("\t8. Check Even Or Odd");
+                    Console.WriteLine("\t9. Exit");
                     Console.Write("Enter choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -50,18 +52,22 @@ namespace BasicCoreProblems
                             Harmonic.HarmonicNumber();
                             break;
                         case 5:
-                            Console.WriteLine("\n\t========== 5. Factors==========");
+                            Console.WriteLine("\n\t========== 5. Factors==================");
                             Factor.PrimeFactor();
                             break;
                         case 6:
-                            Console.WriteLine("\n\t========== 6. QuotientAndRemainder");
+                            Console.WriteLine("\n\t========== 6. QuotientAndRemainder======");
                             QuotientRemainder.QuotientAndRemainder();
                             break;
                         case 7:
-                            Console.WriteLine("\n\t========== 7. Swapping Two Numbers");
+                            Console.WriteLine("\n\t========== 7. Swapping Two Numbers========");
                             SwappingNumber.SwapTwoNumber();
                             break;
                         case 8:
+                            Console.WriteLine("\n\t========== 8. Check Even Or Odd============");
+                            Check.EvenOrOdd();
+                            break;
+                        case 9:
                         default:
                             flag = false;
                             break;
