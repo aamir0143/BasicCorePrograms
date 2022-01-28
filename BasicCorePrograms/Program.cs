@@ -4,6 +4,7 @@ using BasicCorePrograms.HarmonicNumber;
 using BasicCorePrograms.LeapYear;
 using BasicCorePrograms.PowerOf2;
 using BasicCorePrograms.PrimeFactors;
+using BasicCorePrograms.QuotientAndRemainder;
 using System;
 namespace BasicCoreProblems
 {
@@ -24,7 +25,8 @@ namespace BasicCoreProblems
                     Console.WriteLine("\t3. Power Of Two");
                     Console.WriteLine("\t4. Harmonic Number");
                     Console.WriteLine("\t5. Factors");
-                    Console.WriteLine("\t6. Exit");
+                    Console.WriteLine("\t6. QuotientAndRemainder");
+                    Console.WriteLine("\t7. Exit");
                     Console.Write("Enter choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -50,6 +52,10 @@ namespace BasicCoreProblems
                             Factor.PrimeFactor();
                             break;
                         case 6:
+                            Console.WriteLine("\n\t========== 6. QuotientAndRemainder");
+                            QuotientRemainder.QuotientAndRemainder();
+                            break;
+                        case 7:
                         default:
                             flag = false;
                             break;
