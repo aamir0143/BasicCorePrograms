@@ -3,6 +3,7 @@ using BasicCorePrograms.FlipCoin;
 using BasicCorePrograms.HarmonicNumber;
 using BasicCorePrograms.LeapYear;
 using BasicCorePrograms.PowerOf2;
+using BasicCorePrograms.PrimeFactors;
 using System;
 namespace BasicCoreProblems
 {
@@ -22,7 +23,8 @@ namespace BasicCoreProblems
                     Console.WriteLine("\t2. Leap Year");
                     Console.WriteLine("\t3. Power Of Two");
                     Console.WriteLine("\t4. Harmonic Number");
-                    Console.WriteLine("\t5. Exit");
+                    Console.WriteLine("\t5. Factors");
+                    Console.WriteLine("\t6. Exit");
                     Console.Write("Enter choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -44,6 +46,10 @@ namespace BasicCoreProblems
                             Harmonic.HarmonicNumber();
                             break;
                         case 5:
+                            Console.WriteLine("\n\t========== 5. Factors==========");
+                            Factor.PrimeFactor();
+                            break;
+                        case 6:
                         default:
                             flag = false;
                             break;
