@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using BasicCorePrograms.FlipCoin;
+using BasicCorePrograms.HarmonicNumber;
 using BasicCorePrograms.LeapYear;
 using BasicCorePrograms.PowerOf2;
 using System;
@@ -20,7 +21,8 @@ namespace BasicCoreProblems
                     Console.WriteLine("\t1. Flip Coin");
                     Console.WriteLine("\t2. Leap Year");
                     Console.WriteLine("\t3. Power Of Two");
-                    Console.WriteLine("\t4. Exit");
+                    Console.WriteLine("\t4. Harmonic Number");
+                    Console.WriteLine("\t5. Exit");
                     Console.Write("Enter choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -38,6 +40,10 @@ namespace BasicCoreProblems
                             Power.PowerOfTwo();
                             break;
                         case 4:
+                            Console.WriteLine("\n\t========== 4. Harmonic Number==========");
+                            Harmonic.HarmonicNumber();
+                            break;
+                        case 5:
                         default:
                             flag = false;
                             break;
