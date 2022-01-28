@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using BasicCorePrograms.FlipCoin;
 using BasicCorePrograms.LeapYear;
+using BasicCorePrograms.PowerOf2;
 using System;
 namespace BasicCoreProblems
 {
@@ -18,7 +19,8 @@ namespace BasicCoreProblems
                     Console.WriteLine("Choose any one option");
                     Console.WriteLine("\t1. Flip Coin");
                     Console.WriteLine("\t2. Leap Year");
-                    Console.WriteLine("\t3. Exit");
+                    Console.WriteLine("\t3. Power Of Two");
+                    Console.WriteLine("\t4. Exit");
                     Console.Write("Enter choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -32,6 +34,10 @@ namespace BasicCoreProblems
                             Year.LeapYear();
                             break;
                         case 3:
+                            Console.WriteLine("\n\t========== 3. Power Of Two==========");
+                            Power.PowerOfTwo();
+                            break;
+                        case 4:
                         default:
                             flag = false;
                             break;
