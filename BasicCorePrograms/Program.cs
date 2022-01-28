@@ -5,6 +5,7 @@ using BasicCorePrograms.LeapYear;
 using BasicCorePrograms.PowerOf2;
 using BasicCorePrograms.PrimeFactors;
 using BasicCorePrograms.QuotientAndRemainder;
+using BasicCorePrograms.SwapTwoNumber;
 using System;
 namespace BasicCoreProblems
 {
@@ -26,7 +27,8 @@ namespace BasicCoreProblems
                     Console.WriteLine("\t4. Harmonic Number");
                     Console.WriteLine("\t5. Factors");
                     Console.WriteLine("\t6. QuotientAndRemainder");
-                    Console.WriteLine("\t7. Exit");
+                    Console.WriteLine("\t7. Swap Two Numbers");
+                    Console.WriteLine("\t8. Exit");
                     Console.Write("Enter choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -56,6 +58,10 @@ namespace BasicCoreProblems
                             QuotientRemainder.QuotientAndRemainder();
                             break;
                         case 7:
+                            Console.WriteLine("\n\t========== 7. Swapping Two Numbers");
+                            SwappingNumber.SwapTwoNumber();
+                            break;
+                        case 8:
                         default:
                             flag = false;
                             break;
