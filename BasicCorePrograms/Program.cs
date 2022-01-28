@@ -2,6 +2,7 @@
 using BasicCorePrograms.EvenOrOdd;
 using BasicCorePrograms.FlipCoin;
 using BasicCorePrograms.HarmonicNumber;
+using BasicCorePrograms.LargestAmongThreeNumbers;
 using BasicCorePrograms.LeapYear;
 using BasicCorePrograms.PowerOf2;
 using BasicCorePrograms.PrimeFactors;
@@ -32,7 +33,8 @@ namespace BasicCoreProblems
                     Console.WriteLine("\t7. Swap Two Numbers");
                     Console.WriteLine("\t8. Check Even Or Odd");
                     Console.WriteLine("\t9. Check For Vowel Or Consonant");
-                    Console.WriteLine("\t10. Exit");
+                    Console.WriteLine("\t10. Largest Three Numbers");
+                    Console.WriteLine("\t11. Exit");
                     Console.Write("Enter choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -74,6 +76,10 @@ namespace BasicCoreProblems
                             Alphabet.CheckVowelOrConsonant();
                             break;
                         case 10:
+                            Console.WriteLine("\n\t========== 10. Largest Among Three Numbers======");
+                            LargestNumber.LargestThreeNumbers();
+                            break;
+                        case 11:
                         default:
                             flag = false;
                             break;
